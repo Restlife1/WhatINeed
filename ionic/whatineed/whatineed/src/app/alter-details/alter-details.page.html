@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button color="light" (click)="goToMain()">Back</ion-button>
+    <ion-title>What I Need</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-label>
+    <ion-item>{{infoData.id}}</ion-item>
+  </ion-label>
+  <ion-label>
+      <ion-item>{{infoData.name}}</ion-item>
+    </ion-label>
+    <ion-label>
+        <ion-item >{{infoData.color}}</ion-item>
+      </ion-label>
+      <ion-label>
+          <ion-item >{{infoData.price}}</ion-item>
+        </ion-label>
+        <ion-label>
+            <ion-item >{{infoData.quantity}}</ion-item>
+          </ion-label>
+          <ion-button id="delete"(click)="delete()">Delete</ion-button>
+</ion-content>

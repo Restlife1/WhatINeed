@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>What I Need</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngFor="let stuff of stuffs">
+    <ion-button value="1" id="stuff" (click)="goToAlterDetails(stuff.id)">{{stuff.name}}</ion-button>
+  </ion-list>
+  <ion-button id="add" (click)="addStuff()">Add</ion-button>
+</ion-content>
